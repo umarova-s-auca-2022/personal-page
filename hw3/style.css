@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Segoe UI";
+}
+
+#header {
+    background-color: dimgray;
+    height: 5rem;
+    border-bottom: 1rem solid PaleVioletRed;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#title {
+    height: 35rem;
+    background-color: lightgray;
+    text-align: center;
+}
+
+#about {
+    display: flex;
+}
+
+#about img {
+    height: 23rem;
+}
+
+h3 {
+    color: PaleVioletRed;
+    width: 16rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+#fav {
+    display: flex;
+    justify-content: space-evenly;
+}
