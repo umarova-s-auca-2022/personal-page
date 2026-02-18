@@ -17,7 +17,7 @@ body {
     align-content: flex-start;
 }
 
-.container > * {
+.container>* {
     background-color: lightblue;
     font-size: 10rem;
     color: blue;
@@ -28,22 +28,22 @@ body {
 }
 
 .box1 {
-    flex-basis: 42.4%;
+    flex-basis: 593.6px;
 }
 
 .box2 {
-    flex-basis: 56.6%;
+    flex-basis: 792.4px;
 }
 
 .box3,
 .box4 {
-    flex-basis: 29.1%;
+    flex-basis: 407.4px;
 }
 
 .box5 {
-    flex-basis: 39.8%;
+    flex-basis: 557.2px;
 }
 
 .box6 {
-    flex-basis: 100%;
+    flex-basis: 1400px;
 }
