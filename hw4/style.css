@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://cdn.imgchest.com/files/p7bwcdbre7n.png");
+    opacity: .5;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-content: flex-start;
+}
+
+.container > * {
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 200.6px;
+}
+
+.box1 {
+    flex-basis: 42.4%;
+}
+
+.box2 {
+    flex-basis: 56.6%;
+}
+
+.box3,
+.box4 {
+    flex-basis: 29.1%;
+}
+
+.box5 {
+    flex-basis: 39.8%;
+}
+
+.box6 {
+    flex-basis: 100%;
+}
