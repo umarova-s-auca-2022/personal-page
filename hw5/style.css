@@ -10,7 +10,7 @@ body {
 .image {
     height: 200px;
     background-size: cover;
-background-position: center;
+    background-position: center;
 }
 
 .box1 .image {
