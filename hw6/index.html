@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women.kg | Safety & Empowerment Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-background-light text-slate-900 antialiased">
+    
+    <!-- Quick Exit -->
+    <div class="fixed-bottom-right">
+        <button id="quick-exit-btn" class="quick-exit-btn group" title="Leave quickly">
+            <span class="material-symbols-outlined icon-spin">shield_with_heart</span>
+            <span class="text" data-i18n="btn_quick_exit">Quick Exit</span>
+        </button>
+    </div>
+
+    <div class="layout-container">
+        <!-- Header -->
+        <header id="main-header" class="header">
+            <div class="container header-inner">
+                <div class="header-logo">
+                    <span class="material-symbols-outlined icon-primary">emergency</span>
+                    <span class="logo-text">Women.kg</span>
+                </div>
+                
+                <nav id="desktop-nav" class="desktop-nav">
+                    <a href="#about" data-i18n="nav_about">About</a>
+                    <a href="#resources" data-i18n="nav_resources">Resources</a>
+                    <a href="#quiz-section" data-i18n="nav_quiz">Quiz</a>
+                    <a href="#stories" data-i18n="nav_community">Community</a>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="lang-toggle-wrapper">
+                        <select id="lang-toggle" class="lang-select" aria-label="Language Toggle">
+                            <option value="en">EN</option>
+                            <option value="ru">RU</option>
+                            <option value="ky">KY</option>
+                        </select>
+                    </div>
+                    <button id="login-btn" class="btn btn-login" data-i18n="btn_login">Login</button>
+                    <!-- Mobile Menu Toggle -->
+                    <button id="hamburger-btn" class="mobile-menu-toggle">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Nav -->
+            <nav id="mobile-nav" class="mobile-nav hidden">
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#resources" data-i18n="nav_resources">Resources</a>
+                <a href="#quiz-section" data-i18n="nav_quiz">Quiz</a>
+                <a href="#stories" data-i18n="nav_community">Community</a>
+            </nav>
+        </header>
+
+        <main class="main-content container pb-lg">
+            
+            <!-- Hero / Emergency Dashboard -->
+            <section id="about" class="section-spacing">
+                <div class="section-header flex-between mb-xl">
+                    <div>
+                        <h1 class="page-title" data-i18n="em_dash_title">Emergency Dashboard</h1>
+                        <p class="subtitle mt-sm" data-i18n="em_dash_desc">Immediate support and confidential campus security contacts.</p>
+                    </div>
+                    <div class="status-indicator">
+                        <span data-i18n="em_dash_status">Agents Online Now</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-md">
+                    <div class="card card-hover">
+                        <span class="material-symbols-outlined card-icon">phone_in_talk</span>
+                        <h3 class="card-title" data-i18n="sec_399_title">Security Extension 399</h3>
+                        <p class="card-desc" data-i18n="sec_399_desc">Immediate on-campus physical assistance 24/7</p>
+                        <a href="tel:399" class="btn btn-outline-full" data-i18n="sec_399_btn">Call Now</a>
+                    </div>
+                    
+                    <div class="card card-hover">
+                        <span class="material-symbols-outlined card-icon">medical_services</span>
+                        <h3 class="card-title" data-i18n="med_t13_title">Medical Room T13</h3>
+                        <p class="card-desc" data-i18n="med_t13_desc">First aid, reproductive health, and emergency care</p>
+                        <a href="#resources" class="btn btn-outline-full" data-i18n="med_t13_btn">Get Directions</a>
+                    </div>
+                    
+                    <div class="card card-hover sm-col-span-2 lg-col-span-1">
+                        <span class="material-symbols-outlined card-icon">psychology_alt</span>
+                        <h3 class="card-title" data-i18n="ibh_counsel_title">IBH Counseling</h3>
+                        <p class="card-desc" data-i18n="ibh_counsel_desc">Confidential mental health & trauma support</p>
+                        <a href="#resources" class="btn btn-outline-full" data-i18n="ibh_counsel_btn">Book Session</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bento Resource Hub -->
+            <section id="resources" class="section-spacing">
+                <h2 class="section-title mb-lg flex items-center">
+                    <span class="material-symbols-outlined mr-sm">grid_view</span>
+                    <span data-i18n="bento_title">Bento Resource Hub</span>
+                </h2>
+                
+                <div class="bento-grid">
+                    <!-- Health Tile -->
+                    <div class="bento-tile tile-primary col-span-8 overflow-hidden">
+                        <img class="tile-bg-img" src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800" alt="Mental health support session">
+                        <div class="tile-content text-white">
+                            <span class="badge badge-light" data-i18n="badge_wellness">Wellness</span>
+                            <h3 class="tile-headline" data-i18n="mental_health_title">Mental Health Booking</h3>
+                            <p class="tile-desc text-white-90" data-i18n="mental_health_desc">Find a safe space to talk. Schedule your private appointment with certified counselors who specialize in women's health.</p>
+                            <button class="btn btn-white-solid mt-md" data-i18n="mental_health_btn">Schedule Appointment</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Career Tile -->
+                    <div class="bento-tile tile-white col-span-4 flex-col justify-start">
+                        <span class="material-symbols-outlined icon-primary text-3xl mb-md">work</span>
+                        <h3 class="tile-title text-xl font-bold mb-xs" data-i18n="internships_title">Internships</h3>
+                        <p class="text-slate-500 text-sm flex-grow" data-i18n="internships_desc">Exclusive volunteering and professional opportunities for AUCA students.</p>
+                        <div class="avatar-group mt-6 mb-8">
+                            <div class="avatar avatar-text">+12</div>
+                            <div class="avatar avatar-img"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100" alt=""></div>
+                            <div class="avatar avatar-img"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=100" alt=""></div>
+                        </div>
+                        <button class="btn-text" data-i18n="internships_btn">View Openings <span class="material-symbols-outlined text-sm ml-xs">arrow_forward</span></button>
+                    </div>
+                    
+                    <!-- Secure Reporting Tile -->
+                    <div class="bento-tile tile-dark col-span-4 flex-col justify-between">
+                        <div>
+                            <span class="material-symbols-outlined icon-primary text-3xl mb-md">gavel</span>
+                            <h3 class="tile-title text-xl font-bold text-white mb-xs" data-i18n="report_tile_title">Secure Reporting</h3>
+                            <p class="text-slate-400 text-sm" data-i18n="report_tile_desc">Report harassment or safety concerns 100% anonymously. We protect your privacy.</p>
+                        </div>
+                        <button class="btn btn-primary w-full mt-lg open-report-modal" data-i18n="report_tile_btn">Start Report</button>
+                    </div>
+                    
+                    <!-- Community Highlight -->
+                    <div class="bento-tile tile-dashed col-span-8 flex-col-center text-center">
+                        <div class="icon-circle shadow-lg mb-md">
+                            <span class="material-symbols-outlined icon-primary text-3xl">groups</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900" data-i18n="circle_title">Join the Circle</h3>
+                        <p class="text-slate-500 text-sm mt-xs max-w-md pb-md" data-i18n="circle_desc">Connecting over 500 women across campus for mentorship and peer support.</p>
+                        <div class="flex-gap mt-auto">
+                            <button class="btn btn-outline-primary px-lg" data-i18n="circle_btn_learn">Learn More</button>
+                            <button class="btn btn-primary px-lg" data-i18n="circle_btn_join">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Quiz Section (Integrated nicely) -->
+            <section id="quiz-section" class="section-spacing">
+                <div class="quiz-box card border-none shadow-sm pb-xl">
+                    <h2 class="text-3xl font-black text-center mb-md" data-i18n="quiz_title">Wellness Self-Check</h2>
+                    <p class="text-center text-slate-500 max-w-lg mx-auto mb-xl" data-i18n="quiz_desc">Take a quick 3-question check-in to get recommended actions and resources tailored for you.</p>
+                    
+                    <div id="quiz-ui" class="max-w-3xl mx-auto">
+                        <div id="quiz-progress" class="text-primary font-bold text-xs uppercase tracking-widest mb-md text-center">Question 1 of 3</div>
+                        <h3 id="quiz-question" class="text-2xl text-center mb-xl">How have you been feeling about your academic workload lately?</h3>
+                        <div id="quiz-options" class="flex flex-col gap-sm">
+                            <!-- JS will inject options -->
+                        </div>
+                    </div>
+                    
+                    <div id="quiz-result" class="hidden max-w-2xl mx-auto text-center">
+                        <h3 class="text-xl font-bold text-slate-500 mb-md" data-i18n="quiz_res_title">Your Recommended Action:</h3>
+                        <div id="quiz-result-content" class="bg-primary-soft-10 border border-primary-20 p-lg rounded-xl mb-md">
+                        </div>
+                        <button id="quiz-restart" class="btn btn-outline-primary" data-i18n="quiz_restart">Take again</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Anonymous Story Wall & Feed -->
+            <section id="stories" class="section-spacing">
+                <div class="grid grid-cols-12 gap-xl">
+                    <!-- Left: Story Wall -->
+                    <div class="col-span-12 lg-col-span-7 story-wall-card">
+                        <div class="flex-between items-start mb-lg flex-wrap gap-md">
+                            <div>
+                                <h2 class="text-3xl font-black text-slate-900" data-i18n="story_title">Anonymous Story Wall</h2>
+                                <p class="text-slate-500 text-sm mt-xs" data-i18n="story_desc">Your voice matters. Shared experiences create a safer community.</p>
+                            </div>
+                            <button id="post-story-trigger" class="btn btn-soft-primary rounded-full font-bold flex items-center gap-xs">
+                                <span class="material-symbols-outlined text-sm">edit_note</span>
+                                <span data-i18n="story_btn_post">Post Anonymously</span>
+                            </button>
+                        </div>
+                        
+                        <!-- Inline form (hidden initially, toggled by button above) -->
+                        <form id="story-form" class="hidden mt-md mb-xl">
+                            <textarea id="story-input" rows="3" class="form-input mb-sm" placeholder="Share your story anonymously..." required></textarea>
+                            <div class="flex justify-end gap-xs">
+                                <button type="button" id="story-cancel" class="btn btn-ghost">Cancel</button>
+                                <button type="submit" class="btn btn-primary" data-i18n="story_submit">Submit</button>
+                            </div>
+                        </form>
+
+                        <div id="stories-list" class="flex flex-col gap-md">
+                            <!-- Pre-filled Story 1 -->
+                            <div class="story-item border-l-primary">
+                                <div class="flex items-center gap-xs mb-sm">
+                                    <span class="material-symbols-outlined icon-primary text-sm">verified_user</span>
+                                    <span class="story-tag" data-i18n="tag_verified">Verified AUCA Student</span>
+                                </div>
+                                <p class="story-text" data-i18n="story_text_1">"The counseling session at IBH changed my life. I finally felt heard and safe. If you're struggling, please reach out to them."</p>
+                                <div class="story-footer mt-md">
+                                    <div class="flex gap-sm">
+                                        <button class="interaction-btn"><span class="material-symbols-outlined text-sm">favorite</span> 24</button>
+                                        <button class="interaction-btn"><span class="material-symbols-outlined text-sm">chat_bubble</span> 3</button>
+                                    </div>
+                                    <span class="story-time">2 hours ago</span>
+                                </div>
+                            </div>
+                            <!-- Pre-filled Story 2 -->
+                            <div class="story-item border-l-primary-soft">
+                                <div class="flex items-center gap-xs mb-sm">
+                                    <span class="material-symbols-outlined icon-primary text-sm">lock</span>
+                                    <span class="story-tag" data-i18n="tag_anon">Anonymous Post</span>
+                                </div>
+                                <p class="story-text" data-i18n="story_text_2">"Reported an incident through the secure portal. The response was immediate and handled with absolute discretion. Thank you."</p>
+                                <div class="story-footer mt-md">
+                                    <div class="flex gap-sm">
+                                        <button class="interaction-btn"><span class="material-symbols-outlined text-sm">favorite</span> 15</button>
+                                    </div>
+                                    <span class="story-time">5 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Feed -->
+                    <div class="col-span-12 lg-col-span-5">
+                        <h2 class="text-2xl font-black text-slate-900 mb-lg" data-i18n="feed_title">Community News & Updates</h2>
+                        
+                        <div id="partner-feed" class="flex flex-col gap-md">
+                            <!-- Skeletons will be replaced by JS mock data -->
+                            <div class="story-item">
+                                <div class="skeleton-title mb-sm"></div>
+                                <div class="skeleton-text"></div>
+                                <div class="skeleton-text short"></div>
+                            </div>
+                            <div class="story-item">
+                                <div class="skeleton-title mb-sm"></div>
+                                <div class="skeleton-text"></div>
+                                <div class="skeleton-text short"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secure Reporting CTA -->
+            <section class="cta-section max-w-4xl mx-auto">
+                <span class="material-symbols-outlined text-5xl icon-primary mb-md">security</span>
+                <h2 class="text-3xl font-black mb-sm" data-i18n="cta_report_title">Secure Reporting System</h2>
+                <p class="text-slate-600 mb-xl max-w-lg mx-auto" data-i18n="cta_report_desc">Your safety is our priority. Report concerns regarding campus safety, harassment, or student welfare in a completely confidential environment.</p>
+                <div class="flex-center flex-wrap gap-sm">
+                    <button class="btn btn-primary px-xl py-lg text-lg open-report-modal" data-i18n="cta_btn_submit">Submit Anonymous Report</button>
+                    <button class="btn btn-outline-primary px-xl py-lg text-lg bg-white" data-i18n="cta_btn_talk">Talk to an Advocate First</button>
+                </div>
+                <p class="mt-md text-xs font-bold text-slate-500 uppercase tracking-widest" data-i18n="cta_encrypted">Encrypted and Privacy-Compliant</p>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div class="grid grid-cols-4 gap-xl mb-xl">
+                    <div class="col-span-2">
+                        <div class="flex items-center gap-xs mb-sm">
+                            <span class="material-symbols-outlined icon-primary text-2xl">emergency</span>
+                            <span class="text-lg font-extrabold tracking-tight">Women.kg</span>
+                        </div>
+                        <p class="text-slate-500 text-sm max-w-sm" data-i18n="footer_manifesto">An AUCA initiative dedicated to providing a safe, empowering, and resourceful environment for all women in our community.</p>
+                    </div>
+                    <div class="col-span-1 min-w-40">
+                        <h4 class="font-bold mb-md text-sm">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" data-i18n="link_safety">Safety Protocols</a></li>
+                            <li><a href="#" data-i18n="link_counseling">Counseling Services</a></li>
+                            <li><a href="#" data-i18n="link_mentorship">Mentorship Programs</a></li>
+                            <li><a href="#" data-i18n="link_career">Career Board</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-1 min-w-40">
+                        <h4 class="font-bold mb-md text-sm">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Contact Security</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 Women.kg Platform. Built for the AUCA community.</p>
+                    <div class="flex gap-lg">
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal-backdrop hidden">
+        <div class="modal">
+            <button class="close-modal close-login">&times;</button>
+            <h2 class="text-2xl font-bold mb-sm" data-i18n="modal_login_title">Welcome Back</h2>
+            <form id="login-form">
+                <div class="mb-md">
+                    <label class="form-label" data-i18n="modal_email_label">Email (AUCA)</label>
+                    <input type="email" class="form-input" required placeholder="student@auca.kg">
+                </div>
+                <div class="mb-lg">
+                    <label class="form-label" data-i18n="modal_pass_label">Password</label>
+                    <input type="password" class="form-input" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-full" data-i18n="modal_login_btn">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Report Modal -->
+    <div id="report-modal" class="modal-backdrop hidden">
+        <div class="modal modal-lg">
+            <button class="close-modal close-report">&times;</button>
+            <h2 class="text-2xl font-bold mb-xs text-slate-900" data-i18n="modal_report_title">Secure Reporting System</h2>
+            <p class="text-slate-500 mb-lg text-sm" data-i18n="modal_report_desc">This connection is encrypted and 100% anonymous. We do not track your IP address or student ID.</p>
+            <form id="secure-report-form">
+                <div class="mb-md">
+                    <label class="form-label" data-i18n="modal_report_type">Type of Incident</label>
+                    <select class="form-input">
+                        <option>Harassment (Physical/Verbal)</option>
+                        <option>Academic Discrimination</option>
+                        <option>Safety Concern</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="mb-md">
+                    <label class="form-label" data-i18n="modal_report_details">Details (Do not include identifying info if you wish to remain anonymous)</label>
+                    <textarea rows="4" class="form-input" required></textarea>
+                </div>
+                <div class="flex items-start gap-xs mb-lg">
+                    <input type="checkbox" id="anon-check" required checked class="mt-xs cursor-pointer">
+                    <label for="anon-check" class="text-sm text-slate-500 cursor-pointer" data-i18n="modal_report_agree">I understand this will be submitted anonymously to the Title IX coordinator.</label>
+                </div>
+                <button type="submit" class="btn btn-danger w-full py-md text-base" data-i18n="modal_report_btn">Submit Secure Report</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Inline JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Header Scroll Effect ---
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                header.classList.toggle('scrolled', window.scrollY > 10);
+            });
+
+            // --- Menu Toggle ---
+            const hamburger = document.getElementById('hamburger-btn');
+            const mobileNav = document.getElementById('mobile-nav');
+            hamburger.addEventListener('click', () => {
+                mobileNav.classList.toggle('hidden');
+            });
+            mobileNav.querySelectorAll('a').forEach(l => l.addEventListener('click', () => mobileNav.classList.add('hidden')));
+
+            // --- Quick Exit ---
+            document.getElementById('quick-exit-btn').addEventListener('click', () => {
+                window.location.replace("https://google.com");
+            });
+
+            // --- Modals ---
+            const loginModal = document.getElementById('login-modal');
+            const reportModal = document.getElementById('report-modal');
+            const loginBtn = document.getElementById('login-btn');
+            const reportBtns = document.querySelectorAll('.open-report-modal');
+
+            const open = (m) => m.classList.remove('hidden');
+            const close = (m) => m.classList.add('hidden');
+
+            loginBtn.addEventListener('click', () => open(loginModal));
+            document.querySelector('.close-login').addEventListener('click', () => close(loginModal));
+            
+            reportBtns.forEach(btn => btn.addEventListener('click', () => open(reportModal)));
+            document.querySelector('.close-report').addEventListener('click', () => close(reportModal));
+
+            document.querySelectorAll('.modal-backdrop').forEach(m => {
+                m.addEventListener('click', e => { if (e.target === m) close(m); });
+            });
+
+            document.getElementById('login-form').addEventListener('submit', (e) => {
+                e.preventDefault(); alert("Logged in successfully (simulation)."); close(loginModal);
+            });
+            document.getElementById('secure-report-form').addEventListener('submit', (e) => {
+                e.preventDefault(); alert("Secure report submitted."); close(reportModal);
+            });
+
+            // --- Localized Translations ---
+            const d = {
+                en: { nav_about: "About", nav_resources: "Resources", nav_quiz: "Quiz", nav_community: "Community", btn_login: "Login" },
+                ru: { nav_about: "О нас", nav_resources: "Ресурсы", nav_quiz: "Тест", nav_community: "Сообщество", btn_login: "Войти", em_dash_title: "Экстренная панель", em_dash_desc: "Немедленная поддержка и конфиденциальные контакты." },
+                ky: { nav_about: "Биз жөнүндө", nav_resources: "Ресурстар", nav_quiz: "Тест", nav_community: "Коом", btn_login: "Кирүү", em_dash_title: "Шашылыш тактасы", em_dash_desc: "Тез жардам жана жашыруун байланыштар." }
+            };
+            document.getElementById('lang-toggle').addEventListener('change', (e) => {
+                const lang = e.target.value;
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (d[lang] && d[lang][key]) el.textContent = d[lang][key];
+                });
+            });
+
+            // --- Quiz Logic ---
+            const qs = [
+                { q: "How have you been feeling about your academic workload lately?", opts: [{t: "Overwhelmed & stressed", v:3}, {t: "Managing, but it's a lot", v:2}, {t: "I'm on top of it", v:1}] },
+                { q: "In the past month, have you felt unsafe while walking on campus?", opts: [{t: "Yes, frequently", v:3}, {t: "A couple of times", v:2}, {t: "No, I feel safe", v:1}] },
+                { q: "How connected do you feel to the campus community?", opts: [{t: "Very isolated", v:3}, {t: "I have some friends", v:2}, {t: "Very involved", v:1}] }
+            ];
+            let qIdx = 0, score = 0;
+            const qUi = document.getElementById('quiz-ui'), reqBox = document.getElementById('quiz-result');
+            const prog = document.getElementById('quiz-progress'), qText = document.getElementById('quiz-question'), qOpts = document.getElementById('quiz-options');
+            
+            const renderQ = () => {
+                prog.textContent = `Question ${qIdx + 1} of ${qs.length}`;
+                qText.textContent = qs[qIdx].q;
+                qOpts.innerHTML = '';
+                qs[qIdx].opts.forEach(opt => {
+                    const b = document.createElement('button');
+                    b.className = 'btn btn-outline-full py-md text-left text-lg font-medium hover:bg-slate-50';
+                    b.textContent = opt.t;
+                    b.onclick = () => { score += opt.v; qIdx++; if (qIdx < qs.length) renderQ(); else showRes(); };
+                    qOpts.appendChild(b);
+                });
+            }
+            const showRes = () => {
+                qUi.classList.add('hidden'); reqBox.classList.remove('hidden');
+                let html = score >= 7 ? '<h4 class="font-bold text-lg mb-2">IBH Counseling Highly Recommended</h4><p class="text-slate-600 mb-4">Please reach out to our confidential counselors for support.</p><a href="#resources" class="btn btn-primary">Book Session</a>' : 
+                           '<h4 class="font-bold text-lg mb-2">Join The Circle</h4><p class="text-slate-600 mb-4">You might enjoy connecting with peer mentors in The Circle.</p><a href="#resources" class="btn btn-primary">Join Loop</a>';
+                document.getElementById('quiz-result-content').innerHTML = html;
+            }
+            document.getElementById('quiz-restart').onclick = () => { qIdx = score = 0; reqBox.classList.add('hidden'); qUi.classList.remove('hidden'); renderQ(); };
+            renderQ();
+
+            // --- Story Wall Logic ---
+            const storyTrigger = document.getElementById('post-story-trigger');
+            const storyForm = document.getElementById('story-form');
+            storyTrigger.addEventListener('click', () => { storyForm.classList.remove('hidden'); storyTrigger.classList.add('hidden'); document.getElementById('story-input').focus(); });
+            document.getElementById('story-cancel').addEventListener('click', () => { storyForm.classList.add('hidden'); storyTrigger.classList.remove('hidden'); });
+            
+            storyForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const input = document.getElementById('story-input');
+                if(!input.value.trim()) return;
+                
+                const newStory = document.createElement('div');
+                newStory.className = 'story-item border-l-primary new-item-anim';
+                newStory.innerHTML = `
+                    <div class="flex items-center gap-xs mb-sm"><span class="material-symbols-outlined icon-primary text-sm">lock</span><span class="story-tag">Anonymous Post</span></div>
+                    <p class="story-text">"${input.value}"</p>
+                    <div class="story-footer mt-md"><div class="flex gap-sm"><button class="interaction-btn"><span class="material-symbols-outlined text-sm">favorite</span> 0</button></div><span class="story-time">Just now</span></div>`;
+                document.getElementById('stories-list').prepend(newStory);
+                
+                input.value = '';
+                storyForm.classList.add('hidden'); 
+                storyTrigger.classList.remove('hidden');
+            });
+
+            // --- Feed Mock Data ---
+            const feedData = [
+                { title: "Women's Tech Initiative", text: "Join us this Friday for a workshop on building confidence in STEM fields. Open to all students!", time: "2 hours ago" },
+                { title: "AUCA Career Center", text: "New remote internship opportunities for women in data analysis. Apply before the end of the month.", time: "5 hours ago" }
+            ];
+            setTimeout(() => {
+                const feedNode = document.getElementById('partner-feed');
+                feedNode.innerHTML = '';
+                feedData.forEach(d => {
+                    const el = document.createElement('div'); el.className = 'story-item border-l-primary-soft';
+                    el.innerHTML = `<h4 class="font-bold text-sm mb-1">${d.title}</h4><p class="text-slate-600 text-sm mb-3">${d.text}</p><span class="story-time">${d.time}</span>`;
+                    feedNode.appendChild(el);
+                });
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
