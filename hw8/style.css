@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://cdn.imgchest.com/files/my8xckdzm4l.png);
+    background-repeat: no-repeat;
+    max-width: 990px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: 1;
+    color: blue;
+}
+
+.container>* {
+    border: 2px dashed blue;
+}
+
+.container {
+    display: grid;
+    grid-template-rows:
+        minmax(100px, 135px) minmax(200px, 270px) minmax(90px, 127px) minmax(200px, 327.9px) minmax(100px, 165.6px);
+    grid-template-columns:
+        minmax(50px, 89.8px) minmax(150px, 402.2px) minmax(100px, 223.2px) minmax(100px, 267.7px);
+    grid-template-areas:
+        "one six six six"
+        "two two two two"
+        "three three three three"
+        "four four seven eight"
+        "five five five five";
+}
+
+.box1 {
+    grid-area: one;
+}
+
+.box2 {
+    grid-area: two;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
+
+.box8 {
+    grid-area: eight;
+}
+
+.box6 {
+    grid-area: six;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px 19px 27.5px 15px;
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #ffffff;
+    border-top: 25px solid #e4e4e4;
+}
+
+.box6-text {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-3px);
+}
+
+.box6-title {
+    font-size: 21.5px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0px 0 7.8px;
+    letter-spacing: 0.275px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+
+.main-menu li {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu li+li::before {
+    content: "•";
+    color: #f4c01a;
+    margin: 0 10.1px;
+    font-size: 10px;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: #8c8c8c;
+    font-size: 14.03px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.01px;
+}
+
+.main-menu li:nth-last-child(1) a {
+    margin: 0 3px;
+}
+
+.main-menu li:nth-last-child(2) a {
+    letter-spacing: 0.1px;
+    margin: 0 2.2px;
+}
+
+.main-menu li:nth-last-child(3) a {
+    letter-spacing: -0.06px;
+
+}
+
+.main-menu li:nth-last-child(2)::before {
+    margin: 0 8.8px;
+}
+
+.main-menu li:nth-last-child(1)::before {
+    margin: 0 7.2px;
+}
+
+.lang-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 40px 0 23px 0;
+    flex-shrink: 0;
+    letter-spacing: -1.6px;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+
+}
+
+.lang-menu li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 15px;
+    padding: 3.8px 6.7px;
+    position: relative;
+    top: -1px;
+}
+
+.lang-menu li a.active-lang {
+    background-color: #f3bb01;
+    color: #ffffff;
+    border-radius: 4px;
+    position: relative;
+    right: 0px;
+    letter-spacing: -1px;
+
+}
+
+.lang-menu li:first-child {
+    margin-right: 2.5px;
+}
+
+.lang-menu li:nth-child(2) {
+    margin-right: -0.7px;
+    letter-spacing: -0.6px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "one"
+            "six"
+            "two"
+            "three"
+            "four"
+            "seven"
+            "eight"
+            "five";
+    }
+
+    .main-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-menu li {
+        width: 100%;
+    }
+
+    .box6 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 20px 15px;
+    }
+
+    .lang-menu {
+        margin: 0;
+        align-self: flex-end;
+    }
+}
