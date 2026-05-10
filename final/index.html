@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 9</title>
+    <link rel="stylesheet" href="style.css" class="style" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+
+  <body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <button class="buttonMenu">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <img
+      /*src="https://cdn.imgchest.com/files/6yxkcg9dp7w.png"*/
+      style="position: absolute; top: 0; left: 0; z-index: -1"
+    />
+    <div class="container">
+      <div class="box1">
+        <div class="logo-box">
+          <i class="fa fa-balance-scale"></i>
+        </div>
+      </div>
+
+       <div class="box2">
+        <button class="hero-btn hero-btn--left"><i class="fa fa-regular fa-angle-left"></i></button>
+        <div class="hero-content">
+          <h2 class="hero-title">Судебные акты и судебные дела</h2>
+          <p class="hero-desc">Подробная информация о судебных делах и актах. Поиск судебных дел и актов.</p>
+        </div>
+        <button class="hero-btn hero-btn--right"><i class="fa fa-regular fa-angle-right"></i></button>
+      </div>
+
+      <div class="box3">
+        <div class="info-card info-card--zasedaniya">
+          <div class="info-card-icon"><img src="https://cdn.imgchest.com/files/07a4593624c9.png" alt="Заседания" /></div>
+          <div class="info-card-text">
+            <div class="info-card-title">Заседания</div>
+            <div class="info-card-sub">Поиск заседаний судов</div>
+          </div>
+        </div>
+        <div class="info-card info-card--poisk">
+          <div class="info-card-icon"><img src="https://cdn.imgchest.com/files/d50d8744c384.png" alt="Поиск дел" /></div>
+          <div class="info-card-text">
+            <div class="info-card-title">Поиск судебных дел и актов</div>
+            <div class="info-card-sub">В этом разделе можно найти все судебные дела и акты</div>
+          </div>
+        </div>
+      </div>
+      <div class="box4">
+        <div class="panel-header">НОВОСТИ</div>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">05.11.18</span>
+            <a href="#">Статистика публикаций за ( 01.01.2018 - 31.10.2018)</a>
+          </li>
+          <li>
+            <span class="news-date">25.10.17</span>
+            <a href="#">В Узбекистане проходит совещание председателей Верховных судов стран-участниц ШОС</a>
+          </li>
+          <li>
+            <span class="news-date">21.10.17</span>
+            <a href="#">Впервые в истории независимого Кыргызстана сотрудники судебной системы получат квартиры</a>
+          </li>
+          <li>
+            <span class="news-date">15.10.17</span>
+            <a href="#">Айнаш Токбаева Председатель Верховного суда Кыргызской Республики: «Голосование - гражданский долг человека»</a>
+          </li>
+        </ul>
+      </div>
+      <div class="box7">
+        <div class="panel-header">ВРЕМЯ РАБОТЫ САЙТА</div>
+        <ul class="stat-list">
+          <li>
+            <span class="stat-num">9</span>
+            <span class="stat-label">лет</span>
+          </li>
+          <li>
+            <span class="stat-num">11</span>
+            <span class="stat-label">месяцев</span>
+          </li>
+        </ul>
+      </div>
+      <div class="box8">
+        <div class="panel-header">ОПУБЛИКОВАНО</div>
+        <ul class="stat-list">
+          <li>
+            <span class="stat-num">357929</span>
+            <span class="stat-label">дел</span>
+          </li>
+          <li>
+            <span class="stat-num">334297</span>
+            <span class="stat-label">актов</span>
+          </li>
+          <li>
+            <span class="stat-num">565383</span>
+            <span class="stat-label">заседаний</span>
+          </li>
+        </ul>
+      </div>
+      <div class="box5">
+        <div class="footer-left">
+          <i class="fa fa-balance-scale footer-icon"></i>
+          <span class="footer-brand">act.sot.kg</span>
+        </div>
+        <div class="footer-support">
+          <p class="footer-support-title">Обратиться в службу технической поддержки</p>
+          <p class="footer-support-text">Данный веб-сайт стал возможным благодаря помощи <br> американского народа, оказанной через Агентство США по <br>международному развитию (USAID). Судья несет ответственность за <br>идентичность содержимого актов. Содержание веб-сайта не <br>обязательно отражает позицию USAID или Правительства США.</p>
+        </div>
+        <div class="footer-counter">
+          <img src="https://cdn.imgchest.com/files/644d56726391.png" alt="counter" class="counter-img" />
+        </div>
+      </div>
+      <div class="box6">
+        <div class="box6-text">
+          <div class="box6-title">Судебные акты и заседания</div>
+          <ul class="main-menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Постановления Пленума Верховного суда КР</a></li>
+            <li><a href="#">Справка</a></li>
+            <li><a href="#">Служебный вход</a></li>
+          </ul>
+        </div>
+        <ul class="lang-menu">
+          <li><a href="#" class="active-lang">Рус</a></li>
+          <li><a href="#">Кыр</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function switchStyle() {
+        let style = document.querySelector('.style');
+        if (style.getAttribute('href') == 'style.css') {
+          style.setAttribute('href', 'style2.css');
+        } else {
+          style.setAttribute('href', 'style.css');
+        }
+      }
+    </script>
+
+    <script>
+      const buttonMenu = document.querySelector('.buttonMenu')
+      const boxSix = document.querySelector('.box6')
+      buttonMenu.addEventListener('click', () => {
+        console.log('yes, hamburger clicked!')
+        buttonMenu.classList.toggle("mobileMenu")
+        boxSix.classList.toggle('mobileMenu')
+      })
+    </script>
+    
+  </body>
+</html>
