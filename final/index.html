@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" class="style" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project</title>
-    <link rel="stylesheet" href="style.css" class="style" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
   </head>
 
   <body>
-    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <button onclick='toggleTheme()' style='position: fixed; top:0; right:0;'>Switch Style</button>
     <button class="buttonMenu">
       <i class="fa fa-bars"></i>
     </button>
@@ -135,12 +135,12 @@
     </div>
 
     <script>
-      function switchStyle() {
-        let style = document.querySelector('.style');
-        if (style.getAttribute('href') == 'style.css') {
-          style.setAttribute('href', 'style2.css');
+      function toggleTheme() {
+        var theme = document.getElementByTagName('link')[0];
+        if (theme.getAttribute('href') == 'style.css') {
+          theme.setAttribute('href', 'style2.css');
         } else {
-          style.setAttribute('href', 'style.css');
+          theme.setAttribute('href', 'style.css');
         }
       }
     </script>
