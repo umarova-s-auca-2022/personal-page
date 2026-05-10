@@ -136,7 +136,7 @@
 
     <script>
       function toggleTheme() {
-        var theme = document.getElementByTagName('link')[0];
+        var theme = document.getElementsByTagName('link')[0];
         if (theme.getAttribute('href') == 'style.css') {
           theme.setAttribute('href', 'style2.css');
         } else {
